@@ -1,0 +1,247 @@
+<div class="container-fluid">
+    <div id="home" class="row align-items-center hero">
+        <div class="col-lg-3 offset-lg-2">
+            <p>Grupo de ayuda a los animales</p>
+            <h1>Pelitos Contentos</h1>
+            <p>Desde 2006</p>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="row my-3">
+    <div id="actividades" class="col-md-5 offset-md-2 scroll_section">
+        <h2>Novedades...</h2>
+        <ul class="lista-novedades">
+
+            {{#each novedades}}
+            <li><a href="#" data-bs-toggle="modal" data-bs-target="#Modal{{id}}"><img src={{imagen}}
+                        width="30px">
+                    {{titulo}} </a></li>
+            
+            {{/each}}
+        </ul>
+
+    </div>
+
+<!-- Modal 1 -->
+{{#each novedades}}
+    <div class="modal fade" id="Modal{{id}}" tabindex="-1" aria-labelledby="castgatos" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">{{titulo}}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"> <strong> {{subtitulo}} </strong>
+                    {{!-- El primer sábado de cada mes a partir de las 10:00 Hs, en Estadio Club Independiente. Lago
+                    Puelo
+                    1525, Villa Regina, Río Negro. --}}
+                    
+
+                     <br> {{cuerpo}} {{!-- Importante: Sólo se atienden a las primeras 25
+                        mascotas
+                        y
+                        deben venir con ayuno de 12 Hs. --}}
+
+                        <br>
+                    <img src="{{imagen}}" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 1 -->
+
+{{/each}}
+        <!--       Inicio carrusel -->
+    <div class="col-md-3 my-3">
+        <div class="rounded py-5 testimonios">
+            <h2 class="text-center">Testimonios</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-current="true" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-current="true" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonio">
+                            <h5>Feliz con mi Perrito</h5>
+                            <p>María José.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>Adopté 3 hermanitas</h5>
+                            <p>Nati.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="testimonio">
+                            <h5>Encontré un roommate</h5>
+                            <p>Carlos.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span></button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span></button>
+            </div>
+        </div> <!-- fin carrusel -->
+    </div> <!-- Fin row -->
+
+    
+    <!-- inicio nosotros -->
+    <!-- <div id="nosotros" class="row align-items-center py-4">
+            <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block"></div>
+            <img src="img/img_06.JPG" alt="nosotros 1" class="img-fluid">
+        </div>
+        <div class="col-lg-2 col-md-3 d-none d-sm-block"></div>
+        <img src="img/img_07.JPG" alt="nosotros 2" class="img-fluid">
+    </div>
+    <div class="col-1 d-sm-none"></div>
+    <img src="img/img_07.JPG" alt="nosotros 2" class="img-fluid">
+    
+    </div> -->
+
+    <div id="nosotros" class="row-cols-md-2 py-1 scroll_section">
+        <h2>Acerca de Nosotros</h2>
+        <p>Somos un grupo de amigos que unidos por el amor a los animales y preocupados por la situación de abandono que
+            viven algunos, decidimos crear esta agrupación que se dedica a rescatar, dar tránsito y reubicar a las
+            mascotas para que tengan un hogar donde vivir.</p>
+
+    </div>
+
+    <div class="row align-items-stretch row-cols-1 row-cols-md-3 staff g-4 py-2">
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/img_03.JPG" class="card-img-top" alt="Nosotros 1">
+                <div class="card-body">
+                    <h5 class="card-title">Cris Mansilla</h5>
+                    <p class="card-text">Cris Mansilla es un amante de los animales, pero por sobre todo de sus
+                        derechos y bienestar.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/img_04.JPG" class="card-img-top" alt="Nosotros 2">
+                <div class="card-body">
+                    <h5 class="card-title">Juan Paseador</h5>
+                    <p class="card-text">A Juan le encanta a sacar a pasear a nuestras mascotas amigas, sobre todo a
+                        aquellas que se quedan solas mientras sus amos no están en casa, y tambien a los que lo
+                        tienen un patio donde jugar.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="images/img_05.JPG" class="card-img-top" alt="Nosotros 3">
+                <div class="card-body">
+                    <h5 class="card-title">Las Pepas</h5>
+                    <p class="card-text">Las Pepas son tres hermanitas que se encargan de recibir a sus amiguitos
+                        que comparten tránsito en nuestro lugar, juegan, corren y se divierten mucho, para que el
+                        tiempo que estén con nosotros sea muy lindo. </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- fin nosotros -->
+
+    <!-- Inicio Mapa y Formulario -->
+
+    <div id="mapform" class="row py-4 scroll_section">
+        <div class="col-md-4 offset-md-2"></div>
+        <h2>Vení a visitarnos</h2>
+        <div class="mapa">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d774.1148557723095!2d-67.09546401951565!3d-39.096009366825214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scl!4v1711913944219!5m2!1ses-419!2scl"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+
+        <div class="col-md-4 mt-4 mt-sm-0">
+            <h2>Contactate con nosotros</h2>
+            <form class="row g-3" action="/" method="post">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido">
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+
+                <div class="col-6">
+                    <label for="tel" class="form-label">Teléfono</label>
+                    <input type="text" class="form-control" id="tel" placeholder="0" name="tel">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="ciudad" class="form-label">Ciudad</label>
+                    <input type="text" class="form-control" id="inputCity" name="ciudad">
+                </div>
+                <div class="col-md-4">
+                    <label for="provincia" class="form-label">Provincia</label>
+                    <select id="provincia" class="form-select" name="provincia">
+                        <option selected>Provincia</option>
+                        <option>Río Negro</option>
+                        <option>Neuquén</option>
+                        <option>Mendoza</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Escriba su mensaje aquí</label>
+                    <textarea class="form-control" id="mensaje" rows="3" name="mensaje">
+
+                    </textarea>
+
+                </div>
+
+                {{!-- <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Check me out --}}
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+            <p>{{message}}</p>
+
+        </div>
+
+    </div>

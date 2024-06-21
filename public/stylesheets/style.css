@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(207, 130, 130);
+}
+
+/* font-family: "Alfa Slab One", serif;
+font-family: "Montserrat", sans-serif; */
+
+footer {
+    background-color: aliceblue;
+    text-align: center;
+    color: rgb(207, 130, 130);
+    padding: 1rem;
+}
+
+h1 {
+    font-family: "Alfa Slab One", serif;
+
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.hero {
+    background: url(../images/img_02.jpg) no-repeat;
+    background-size: cover;
+    height: 0.5vh;
+    min-height: 360px;
+    color: rgb(255, 255, 255);
+
+}
+
+.lista-novedades {
+    list-style: none;
+    /* width: 360px; */
+}
+
+.lista-novedades li {
+    margin: 1px, 0;
+}
+
+.lista-novedades li a {
+
+    font-family: "Montserrat", bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(100, 100, 100);
+    transition: all .2s ease-in-out;
+    display: block;
+}
+
+.lista-novedades li a:hover {
+    background-color: rgb(116, 70, 70);
+    color: rgb(207, 130, 130);
+
+}
+
+.lista-novedades li a img {
+    border-radius: 0px 149px 149px 0px;;
+}
+
+.testimonios {
+    background-color: rgb(168, 167, 166);
+    padding-bottom: 4rem, !important;
+    color: rgb(243, 215, 215);
+}
+
+.testimonio {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.staff {
+    background-color: #dfacf3;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.scroll_section {
+    scroll-margin-top: 55px;
+}
